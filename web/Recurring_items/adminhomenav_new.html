@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>User Data Options</span>
+        </h6>  
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath }/adminServlet?&action=List">
+              <span data-feather="home"></span>
+              View/Edit Users &raquo;
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<c:url value='/UserManagement?action=addInit' />">
+              <span data-feather="file"></span>
+              Add New User&raquo;
+            </a>
+          </li>
+          
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Product Data Options</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath }/adminServlet?&action=Listp">
+              <span data-feather="file-text"></span>
+              View/Edit Products&raquo;
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath }/addProduct.jsp">
+              <span data-feather="file-text"></span>
+              Add New Product&raquo;
+            </a>
+          </li>
+         
+        </ul>
+        
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Order Data Options</span>
+          <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" href="${pageContext.request.contextPath }/adminServlet?&action=Listo">
+              <span data-feather="file-text"></span>
+              View/Edit Orders&raquo;
+            </a>
+          </li>
+          
+        </ul>  
+      </div>
+    </nav>
+</html>

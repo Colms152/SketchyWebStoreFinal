@@ -1,0 +1,44 @@
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE, EIRCODE)
+VALUES('admin@admin.com', 'mypassword', 'System', 'Administrator','ADMIN', 'T12K8AF');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE, EIRCODE)
+VALUES('user1@user.com', 'mypassword', 'General1', 'User','GENUSER', 'T12K8AF');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE, EIRCODE)
+VALUES('user2@user.com', 'mypassword', 'General2', 'User','GENUSER', 'T12K8AF');
+
+INSERT INTO USERDATA(EMAIL,PASSWORD,FNAME,LNAME,USERTYPE, EIRCODE)
+VALUES('user3@user.com', 'mypassword', 'General3', 'User','GENUSER', 'T12K8AF');
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('All Media Easel 150pce', 'Set', 'This set was curated for artists who want to create art with a huge assortment of mediums.', '99.99', 100);
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('Ceate 5 Hog Hair Brushes', 'Brush', 'Set of 5 hog hair brushes, recommended for oil and acrylic painting.', '3.60', 100);
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('Derwent Natural Graphite-medium', 'Sketching', 'Loose Blocks', '1.80', 100);
+
+INSERT INTO TORDER (ORDER_ID,CUSTOMER_ID,PRODUCT_ID,QUANTITY, SHIPPING_ID, EXTERNELPAY )
+VALUES(1, 5 , 3 , 2 , 0, 001);
+
+INSERT INTO TORDER (ORDER_ID,CUSTOMER_ID,PRODUCT_ID,QUANTITY, SHIPPING_ID, EXTERNELPAY )
+VALUES(1, 5 , 2 , 5, 0, 001);
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
