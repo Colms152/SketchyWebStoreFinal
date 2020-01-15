@@ -22,7 +22,7 @@ import java.util.Iterator;
  *
  * @author Colm
  */
-public class TestAjaxServlet extends HttpServlet {
+public class AjaxServlet extends HttpServlet {
 
     private ServletContext context;
     private ProductDAO prodDataDAO = new ProductDAO();

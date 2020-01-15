@@ -9,10 +9,6 @@
         <servlet-class>com.bsapp.servlets.UserManagementServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SearchServlet</servlet-name>
-        <servlet-class>com.bsapp.servlets.SearchServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>com.bsapp.servlets.LoginServlet</servlet-class>
     </servlet>
@@ -30,16 +26,12 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet>
-        <servlet-name>testing_test</servlet-name>
-        <servlet-class>com.bsapp.servlets.testing_test</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>com.bsapp.servlets.CartServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>TestAjaxServlet</servlet-name>
-        <servlet-class>com.bsapp.servlets.TestAjaxServlet</servlet-class>
+        <servlet-class>com.bsapp.servlets.AjaxServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>searchresultsservlet</servlet-name>
@@ -78,16 +70,8 @@
         <url-pattern>/UserManagement</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>SearchServlet</servlet-name>
-        <url-pattern>/SearchServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>TestPageServlet</servlet-name>
         <url-pattern>/TestPage</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>testing_test</servlet-name>
-        <url-pattern>/testing_test</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CartServlet</servlet-name>
