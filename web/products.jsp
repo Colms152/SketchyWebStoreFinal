@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Products | Sketchy Art Shop</title>
+    <title>SAS | Products</title>
 <script type="text/javascript" src="javascriptsws.js"></script>
  
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
@@ -156,8 +156,7 @@
                           </c:otherwise>
                       </c:choose>
               </li>
-              <li stlye="float: left;"><a href="../${pageContext.request.contextPath }/CartServlet" class="text-white"><img src="img/shopping-cart.svg" width="18" height="18" >Cart</a></li>
-
+              
             </ul>
         </nav>
         
@@ -186,6 +185,7 @@
             <img src="ProdImg/<c:out value="${tempproduct.getId()}"/>.jpg" width="100%" height="100%"  >
             
             <div class="card-body">
+                <h4>${tempproduct.getProdName()}</h4> 
               <h5>&euro; <c:out value="${tempproduct.getCODE()}"/> </h5>
               <p class="card-text"><c:out value="${tempproduct.getProdDescription()}"/> 
 

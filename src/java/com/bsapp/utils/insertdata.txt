@@ -14,10 +14,19 @@ INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
 VALUES('All Media Easel 150pce', 'Set', 'This set was curated for artists who want to create art with a huge assortment of mediums.', '99.99', 100);
 
 INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
-VALUES('Ceate 5 Hog Hair Brushes', 'Brush', 'Set of 5 hog hair brushes, recommended for oil and acrylic painting.', '3.60', 100);
+VALUES('Create 5 Hog Hair Brushes', 'Brush', 'Set of 5 hog hair brushes, recommended for oil and acrylic painting.', '3.60', 70);
 
 INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
-VALUES('Derwent Natural Graphite-medium', 'Sketching', 'Loose Blocks', '1.80', 100);
+VALUES('Derwent Natural Graphite-medium', 'Sketching', 'Loose Blocks', '1.80', 90);
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('Goldfaber Oil Pastels Bx.12', 'Sketching', '', '4.99', 110);
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('Derwent Graphic Pencil 6 Tin', 'Sketching', 'A good graphite drawing starts with a good graphite pencil!', '10.99', 32);
+
+INSERT INTO PRODUCT (NAME,TYPE,LONG_DESCRIPTION,CODE, STOCK)
+VALUES('Create A2 Cartridge Pad', 'Sketching', 'Sketching Pads & Journals', '8.99', 45);
 
 INSERT INTO TORDER (ORDER_ID,CUSTOMER_ID,PRODUCT_ID,QUANTITY, SHIPPING_ID, EXTERNELPAY )
 VALUES(1, 5 , 3 , 2 , 0, 001);

@@ -18,7 +18,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
-    <title>Checkout example · Bootstrap</title>
+    <title>SAS | Cart</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
 
@@ -70,12 +70,14 @@
     <div class="col-md-8 order-md-1">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
         <span class="text-muted">Your cart</span>
-        <span class="badge badge-secondary badge-pill">3</span>
+        <span class="badge badge-secondary badge-pill">${totalunits}</span>
       </h4>
       <ul class="list-group mb-3">
           
           <c:forEach var="item" items="${sessionScope.cart}">
 			<c:set var="total" value="${total + item.product.CODE * item.quantity }"></c:set>
+                        <c:set var="totalunits" value="${totalunits + item.quantity}"></c:set>
+
                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                                 <div>
                                 <h6 class="my-0">${item.product.getProdName() }</h6>
@@ -101,6 +103,7 @@
         </li>
       </ul>
         <p>
+        <!-- -->    
         <a href="${pageContext.request.contextPath }/ConfirmOrderServlet?action=${ONum}" class="btn btn-primary my-2">Pay With PayPal</a>
         <a href="${pageContext.request.contextPath }/ProductsServlet" class="btn btn-secondary my-2">Return to Products</a>
         </p>

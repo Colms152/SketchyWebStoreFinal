@@ -67,7 +67,7 @@ public class AddtoTables extends HttpServlet {
 
             setupDb.showData();
 
-            RequestDispatcher rd = request.getRequestDispatcher("LogOutServlet");
+            RequestDispatcher rd = request.getRequestDispatcher("/adminServlet?&action=Listp");
             rd.forward(request, response);
         }
         

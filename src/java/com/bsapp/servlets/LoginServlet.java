@@ -47,9 +47,9 @@ public class LoginServlet extends HttpServlet implements IConstants {
             UserManager uMgr = new UserManager();
             
             User user = uMgr.loginUser(email, password);
-            System.out.println( "as email not in DB");
+            System.out.println( "User returned from Manager:" + user);
             if (user == null) {
-                RequestDispatcher rd = request.getRequestDispatcher("/");
+                RequestDispatcher rd = request.getRequestDispatcher("/index.html");
                 rd.forward(request, response);
             } else {
                 request.getSession(true).setAttribute(IConstants.SESSION_KEY_USER, user);

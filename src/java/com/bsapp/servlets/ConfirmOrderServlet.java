@@ -91,7 +91,7 @@ public class ConfirmOrderServlet extends HttpServlet {
         
         
         
-        RequestDispatcher rd = request.getRequestDispatcher("LogOutServlet");
+        RequestDispatcher rd = request.getRequestDispatcher("/OrderConfirmed.jsp");
         rd.forward(request, response); 
         
         response.setContentType("text/html;charset=UTF-8");

@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.6">
-    <title>Dashboard Template · Bootstrap</title>
+    <title>SAS | Order Management</title>
     
     
         <!-- Le styles -->

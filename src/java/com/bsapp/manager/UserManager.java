@@ -23,11 +23,10 @@ public class UserManager {
     public User loginUser(String email, String passWord){
         
         UserDAO userDAO = new UserDAO();
-        System.out.println("Running");
         User user = userDAO.getUserByEmail(email);
-        System.out.println(user);
+        System.out.println("The email found in the Db was:" + user.getEmail());
         
-        if (user.getPassword().equals(passWord) && user != null){
+        if (user.getPassword().equals(passWord) && user.getEmail() != "0"){
             return user;
         }
         else return null;
