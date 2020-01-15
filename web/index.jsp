@@ -124,7 +124,7 @@
     <link href="signin.css" rel="stylesheet">
     
   </head>
-  <body class="text-center"  style="background-image: url(../sketchywebstore/img/HompageBG.jpg);">
+  <body class="text-center"  style="background-image: url(../SketchyWebStoreFinal-master/img/HompageBG.jpg);">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
     <div class="inner">
